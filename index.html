@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Key Code Event Tool</title>
+
+  <!-- ======== Fontawesome CDN Link ======== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- ======== CSS ======== -->
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header">
+        <p>🇺🇦🇺🇦🇺🇦СЛАВА УКРАЇНІ🇺🇦🇺🇦🇺🇦</p>
+      </div>
+    </header>
+    <main class="layout-main">
+      <div class="home-message">
+        <div class="wrapper">
+          <h2 class="message-box">
+            Press any key to get the JavaScript event keycode info
+          </h2>
+        </div>
+      </div>
+      <h1 class="page-title">JavaScript Key Code</h1>
+      <div class="page-key-code hide"></div>
+      <h2 class="page-subtitle hide">Key Code Information</h2>
+
+      <div class="cards hide">
+        <div class="card-item">
+          <div class="card-item__header">
+            <h4 class="card-item__title">event.key</h4>
+          </div>
+          <div class="card-item__body">
+            <div class="event-card event-key-card"></div>
+          </div>
+          <div class="card-item__footer">
+            <p class="card-item__description">
+              The value of the key pressed. Accounts for modifiers keys that return CAPS and alternate chars.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item__header">
+            <h4 class="card-item__title">event.code</h4>
+          </div>
+          <div class="card-item__body">
+            <div class="event-card event-code-card"></div>
+          </div>
+          <div class="card-item__footer">
+            <p class="card-item__description">
+              The physical key on the keyboard. Doesn't care if you are holding a modifier like Shift.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="card-item__header">
+            <h4 class="card-item__title">event.which</h4>
+          </div>
+          <div class="card-item__body">
+            <div class="event-card event-which-card"></div>
+          </div>
+          <div class="card-item__footer">
+            <p class="card-item__description">
+              event.which and event.keyCode are deprecated in modern browsers. Use .key or .code instead.
+            </p>
+          </div>
+        </div>
+        <div class="card-item">
+          <div class="card-item__header">
+            <h4 class="card-item__title">History</h4>
+          </div>
+          <div class="card-item__body history-block">
+            <div class="wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
